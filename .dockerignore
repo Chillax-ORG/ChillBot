@@ -1,0 +1,5 @@
+.git
+.gitignore
+Pipfile
+Pipfile.lock
+__pychache__
