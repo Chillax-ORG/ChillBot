@@ -41,7 +41,7 @@ async def on_message(message: discord.Message):
 
     answer = faq_manager.get_answer(message.content)
     if answer:
-        logging.info(f'responding to {message.author} ({message.author.id}) with "{answer}"')
+        logging.info(f'responding to {message.author} ({message.author.id})\nmessage: "{message.content}"\nresponse: "{answer}"')
         await message.reply(answer)
 
 
