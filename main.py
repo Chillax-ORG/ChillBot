@@ -11,7 +11,24 @@ from faq_manager import FAQManager
 
 load_dotenv()
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+def get_log_level(log_level_str: str) -> int:
+    """Convert string log level to logging module constant."""
+    log_level_str = log_level_str.upper()
+    logging_levels = {
+        'DEBUG': logging.DEBUG,
+        'INFO': logging.INFO,
+        'WARNING': logging.WARNING,
+        'ERROR': logging.ERROR,
+        'CRITICAL': logging.CRITICAL
+    }
+    return logging_levels.get(log_level_str, logging.INFO)
+
+
+log_level_str = os.getenv('LOG_LEVEL', 'INFO')
+log_level = get_log_level(log_level_str)
+
+logging.basicConfig(level=log_level, format='%(asctime)s - %(levelname)s - %(message)s')
 
 TOKEN = os.getenv('DISCORD_TOKEN')
 
@@ -41,7 +58,8 @@ async def on_message(message: discord.Message):
 
     answer = faq_manager.get_answer(message.content)
     if answer:
-        logging.info(f'responding to {message.author} ({message.author.id})\nmessage: "{message.content}"\nresponse: "{answer}"')
+        logging.info(
+            f'responding to {message.author} ({message.author.id})\nmessage: "{message.content}"\nresponse: "{answer}"')
         await message.reply(answer)
 
 
