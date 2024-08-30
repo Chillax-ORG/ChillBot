@@ -47,11 +47,20 @@ async def on_ready():
     logging.info('Finished computing embeddings')
 
 
+def should_ignore_message(message: discord.Message) -> bool:
+    if 'https://chillax-org.github.io/chillaxdocs' in message.content:
+        # Ignore message if it contains a link to the docs
+        return True
+
+    return False
+
+
 @bot.event
 async def on_message(message: discord.Message):
     if message.author == bot.user:
         return
-
+    if should_ignore_message(message):
+        return
     db = load_db(message.guild)
     if db['enabled_channel'] != message.channel.id:
         return
