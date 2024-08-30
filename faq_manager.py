@@ -1,4 +1,5 @@
 import json
+import logging
 import os
 import re
 from typing import List, Dict
@@ -85,8 +86,10 @@ class FAQManager:
     def load_from_json(self):
         # Create file if it doesn't exist
         if not os.path.isfile(self.faq_filename):
+            logging.info('Creating new faq entry JSON file')
             with open(self.faq_filename, 'w') as db:
                 db.write(json.dumps({}))
+                logging.info('New faq entry JSON file created')
 
         with open(self.faq_filename, 'r') as f:
             self.faq_entries = json.load(f)
