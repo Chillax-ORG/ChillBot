@@ -1,4 +1,4 @@
 /.idea
 /.env
-/storage
+/storage/db.json
 __pycache__/
