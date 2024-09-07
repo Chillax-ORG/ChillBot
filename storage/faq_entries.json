@@ -80,35 +80,55 @@
     "answer": "If you want to use the default Discord folder icons, [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#11-how-to-get-rid-of-the-folder-icons-and-make-it-like-the-old-discord>)"
   },
   {
+    "question": "How do I get rid of the ring around profile pictures?",
+    "answer": "If you want to disable the radial status addon (the colored rings around profile pictures), [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#12-how-to-get-rid-of-the-radial-status-ring-around-the-user-profile-picture-image>)"
+  },
+  {
+    "question": "How do I change the friends list to go back to the regular discord look?",
+    "answer": "If you want to disable the friend grid addon and go back to the regular list view, [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#13-how-to-get-rid-of-the-friend-grid>)"
+  },
+  {
     "question": "How can I get rid of this message below the channel list?",
-    "answer": "If you want to get rid of that \"sorry this big gap is here\" message, [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#12-how-to-get-rid-of-the-below-attached-ugly-thing>)"
+    "answer": "If you want to get rid of that \"sorry this big gap is here\" message, [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#14-how-to-get-rid-of-the-below-attached-ugly-thing>)"
   },
   {
     "question": "How do I remove the message that says \"sorry this big gap is here\"?",
-    "answer": "If you want to get rid of that \"sorry this big gap is here\" message, [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#12-how-to-get-rid-of-the-below-attached-ugly-thing>)"
+    "answer": "If you want to get rid of that \"sorry this big gap is here\" message, [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#14-how-to-get-rid-of-the-below-attached-ugly-thing>)"
   },
   {
     "question": "How do I change the theme to enable dark mode?",
-    "answer": "If you are asking how to switch between dark/light mode, [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#13-how-to-use-dark-light-mode-in-chillax-theme>)"
+    "answer": "If you are asking how to switch between dark/light mode, [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#15-how-to-use-dark-light-mode-in-chillax-theme>)"
   },
   {
     "question": "How do I change the theme to enable light mode?",
-    "answer": "If you are asking how to switch between dark/light mode, [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#13-how-to-use-dark-light-mode-in-chillax-theme>)"
+    "answer": "If you are asking how to switch between dark/light mode, [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#15-how-to-use-dark-light-mode-in-chillax-theme>)"
   },
   {
     "question": "Is the background supposed to look like this?",
-    "answer": "If your theme isn't looking correct, [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#14-after-applying-chillax-theme-it-looks-funny-and-or-transparent-see-through-background-is-missing-what-to-do>) for troubleshooting steps"
+    "answer": "If your theme isn't looking correct, [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#16-after-applying-chillax-theme-it-looks-funny-and-or-transparent-see-through-background-is-missing-what-to-do>) for troubleshooting steps"
   },
   {
     "question": "The theme looks broken to me",
-    "answer": "If your theme isn't looking correct, [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#14-after-applying-chillax-theme-it-looks-funny-and-or-transparent-see-through-background-is-missing-what-to-do>) for troubleshooting steps"
+    "answer": "If your theme isn't looking correct, [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#16-after-applying-chillax-theme-it-looks-funny-and-or-transparent-see-through-background-is-missing-what-to-do>) for troubleshooting steps"
   },
   {
     "question": "How can I remove the mobile icon next to profile pictures?",
-    "answer": "If you want to get rid of the mobile icon next to profile pictures, [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#15-how-to-get-rid-of-the-mobile-icon-besides-the-avatar>)"
+    "answer": "If you want to get rid of the mobile icon next to profile pictures, [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#17-how-to-get-rid-of-the-mobile-icon-beside-the-avatar>)"
   },
   {
     "question": "How do I change the color of links?",
-    "answer": "If you want to change the color of links, [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#16-how-to-change-the-color-of-urls-links>)"
+    "answer": "If you want to change the color of links, [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#18-how-to-change-the-color-of-urls-links>)"
+  },
+  {
+    "question": "How do I change the text in the message box to something else?",
+    "answer": "If you want to change the placeholder text in the message box (e.g. 'life is so much easier...' / 'you can't chill in this channel'), [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#19-how-to-change-the-input-placeholder-value-from-life-is-so-much-easier-when-you-just-take-a-moment-to-chill-to-something-that-i-want>)"
+  },
+  {
+    "question": "How do I change the typing indicator text that says \"smashing some buttons\"?",
+    "answer": "If you want to change the \"{person} is smashing some buttons\" typing indicator text, [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#21-how-to-change-the-typing-indicator-text>)"
+  },
+  {
+    "question": "How do I make the scroll bar show up again?",
+    "answer": "If you want to re-enable the scroll bar, [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#22-how-to-get-back-the-scroll-wheel-scroller-scrollbar-in-chillax>)"
   }
 ]
