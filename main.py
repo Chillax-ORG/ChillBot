@@ -48,7 +48,7 @@ async def on_ready():
 
 
 def should_ignore_message(message: discord.Message) -> bool:
-    if 'https://chillax-org.github.io/chillaxdocs' in message.content:
+    if 'https://chillax-org.github.io/chillaxdocs' in message.content or 'https://chillax.inmoresentum.net' in message.content:
         # Ignore message if it contains a link to the docs
         return True
 
