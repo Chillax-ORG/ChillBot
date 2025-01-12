@@ -130,5 +130,9 @@
   {
     "question": "How do I make the scroll bar show up again?",
     "answer": "If you want to re-enable the scroll bar, [see here](<https://chillax-org.github.io/chillaxdocs/vencordfaq.html#22-how-to-get-back-the-scroll-wheel-scroller-scrollbar-in-chillax>)"
+  },
+  {
+    "question": "it is blank when I edit the quickCSS (quick CSS)?",
+    "answer": "You need to modify the theme according to how you installed it. [see here](<https://chillax-org.github.io/chillaxdocs/installation-guide.html?section=Vencord>) for details"
   }
 ]
