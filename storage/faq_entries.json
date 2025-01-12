@@ -133,6 +133,10 @@
   },
   {
     "question": "it is blank when I edit the quickCSS (quick CSS)?",
-    "answer": "You need to modify the theme according to how you installed it. [see here](<https://chillax-org.github.io/chillaxdocs/installation-guide.html?section=Vencord>) for details"
+    "answer": "If your quickCSS is blank, you need to modify the theme according to how you installed it. [see here](<https://chillax-org.github.io/chillaxdocs/installation-guide.html?section=Vencord>) for details"
+  },
+  {
+    "question": "why is my quickCSS empty?",
+    "answer": "If your quickCSS is blank, you need to modify the theme according to how you installed it. [see here](<https://chillax-org.github.io/chillaxdocs/installation-guide.html?section=Vencord>) for details"
   }
 ]
