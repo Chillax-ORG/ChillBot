@@ -6,6 +6,7 @@ from typing import List, Dict
 
 import numpy as np
 from sentence_transformers import SentenceTransformer
+from torch import Tensor
 
 
 class FAQManager:
@@ -13,7 +14,7 @@ class FAQManager:
         self.faq_filename = f'storage/{faq_filename}'
         self.model = SentenceTransformer(model_name)
         self.faq_entries: List[Dict[str, str]] = []
-        self.faq_embeddings: List[np.ndarray] = []
+        self.faq_embeddings: List[Tensor] = []
 
     def add_entry(self, question: str, answer: str) -> bool:
         for entry in self.faq_entries:

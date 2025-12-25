@@ -61,7 +61,7 @@ async def on_message(message: discord.Message):
         return
     if should_ignore_message(message):
         return
-    db = load_db(message.guild)
+    db = load_db(message.guild) # type: ignore
     if db['enabled_channel'] != message.channel.id:
         return
 

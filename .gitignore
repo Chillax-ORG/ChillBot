@@ -2,3 +2,4 @@
 /.env
 /storage/db.json
 __pycache__/
+.venv/
