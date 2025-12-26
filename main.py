@@ -5,7 +5,9 @@ from typing import List
 import discord
 from discord.commands import Option
 from dotenv import load_dotenv
+from sympy import content
 
+from class_updater import ClassUpdater
 from dbutils import load_db, save_db
 from faq_manager import FAQManager
 
@@ -38,6 +40,7 @@ intents.messages = True
 
 bot = discord.Bot(intents=intents)
 faq_manager = FAQManager()
+class_updater = ClassUpdater()
 
 
 @bot.event
@@ -61,7 +64,7 @@ async def on_message(message: discord.Message):
         return
     if should_ignore_message(message):
         return
-    db = load_db(message.guild) # type: ignore
+    db = load_db(message.guild)
     if db['enabled_channel'] != message.channel.id:
         return
 
@@ -147,6 +150,27 @@ async def list_faq(ctx: discord.ApplicationContext):
     discord_file = discord.File(faq_manager.faq_filename)
 
     await ctx.respond("Here are the FAQ entries:", file=discord_file, ephemeral=True)
+
+
+@bot.message_command(name='Update CSS Classes')
+async def update_css_classes(ctx: discord.ApplicationContext, message: discord.Message):
+    updated_message = class_updater.replace(message.content)
+    if updated_message == message.content:
+        await ctx.respond('CSS is up to date', ephemeral=True)
+        return
+
+    if message.author != bot.user:
+        # Don't prepend the first line multiple times
+        updated_message = f'Updated CSS:\n\n{updated_message}'
+    
+    thread_types = [discord.ChannelType.news_thread, discord.ChannelType.public_thread, discord.ChannelType.private_thread]
+    if message.channel.type not in thread_types:
+        thread = await message.create_thread(name='Updated Version')
+        await thread.send(updated_message)
+    else:
+        await message.reply(updated_message, mention_author=False)
+
+    await ctx.respond('Updated CSS classes', ephemeral=True)
 
 
 bot.run(TOKEN)

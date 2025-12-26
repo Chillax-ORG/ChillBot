@@ -7,14 +7,20 @@ import json
 DB_NAME = 'storage/db.json'
 
 
-def load_db(guild: discord.Guild) -> dict:
+def load_db(guild: discord.Guild | None) -> dict:
+    if not guild:
+        raise ValueError('Missing guild')
+    
     # return this guild's entry in db.json
     db = _load_db()
     _validate_db(guild, db)
     return db[str(guild.id)]
 
 
-def save_db(guild: discord.Guild, data: dict) -> None:
+def save_db(guild: discord.Guild | None, data: dict) -> None:
+    if not guild:
+        raise ValueError('Missing guild')
+    
     current_db = _load_db()
     with open(DB_NAME, 'w') as db:
         current_db[str(guild.id)] = data
