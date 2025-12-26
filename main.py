@@ -152,7 +152,8 @@ async def list_faq(ctx: discord.ApplicationContext):
     await ctx.respond("Here are the FAQ entries:", file=discord_file, ephemeral=True)
 
 
-@bot.message_command(name='Update CSS Classes')
+@bot.message_command(name='Update CSS Classes', description='This is a description of the "Update CSS Classes" command')
+@discord.default_permissions(administrator=True)
 async def update_css_classes(ctx: discord.ApplicationContext, message: discord.Message):
     updated_message = class_updater.replace(message.content)
     if updated_message == message.content:
