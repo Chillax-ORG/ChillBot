@@ -156,7 +156,7 @@ async def list_faq(ctx: discord.ApplicationContext):
 async def update_css_classes(ctx: discord.ApplicationContext, message: discord.Message):
     updated_message = class_updater.replace(message.content)
     if updated_message == message.content:
-        await ctx.respond('CSS is up to date', ephemeral=True)
+        await ctx.respond('CSS is already up to date', ephemeral=True)
         return
 
     if message.author != bot.user:
@@ -170,7 +170,7 @@ async def update_css_classes(ctx: discord.ApplicationContext, message: discord.M
     else:
         await message.reply(updated_message, mention_author=False)
 
-    await ctx.respond('Updated CSS classes', ephemeral=True)
+    await ctx.respond('CSS updated successfully', ephemeral=True)
 
 
 bot.run(TOKEN)
